@@ -5,25 +5,25 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header>
     <div className="container">
-      <div className="row space-between">
+      {/* NAV */}
+      <nav className="row space-between">
         <div className="logo">
           <Link to="/">{siteTitle}</Link>
         </div>
-        <Link to="/about" className="menu">
-          About us
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fillRule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </Link>
-      </div>
+        <ul className="row space-between">
+          <li>
+            <Link to="/projects" className="menu">
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="menu">
+              About us
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      {/* NAV */}
     </div>
   </header>
 )

@@ -15,7 +15,7 @@ https://foundation.mozilla.org/en/blog/how-create-stronger-safer-online-communit
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 358px) {
+@media (min-width: 320px) {
   .container,
   .container-sm {
     width: 85%;
@@ -82,12 +82,12 @@ https://foundation.mozilla.org/en/blog/how-create-stronger-safer-online-communit
 }
 
 .wrapper {
-  // margin-top: 0;
   width: 75%;
-  // min-width: 100vh; ???
   max-width: 900px;
-  margin: 0 auto;
-  margin-bottom: 4rem;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: calc(60px + (80 - 60) * ((100vw - 320px) / (1600 - 320)));
 }
 
 // .container {

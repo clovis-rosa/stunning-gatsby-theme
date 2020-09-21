@@ -8,10 +8,10 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <section>
-        <article>
+      <section className="section">
+        <article className="article">
           <div className="wrapper">
-            <h1>Building beautiful solutions.</h1>
+            <h2>Building beautiful solutions.</h2>
             <p>
               Our goal is to provide simple, beautiful, and effective software
               solutions your team will enjoy using. From performance and uptime
@@ -25,40 +25,44 @@ const IndexPage = () => {
           </div>
         </article>
 
-        <article>
+        <article className="article">
           <div className="wrapper">
-            <h2>
+            <h3>
               Serverless applications in seconds, in your own AWS account.
-            </h2>
+            </h3>
             <p>
               Deploy infinitely scalable serverless applications, APIs, and
               sites in seconds with a single command. Bring a Heroku-style user
               experience to your own AWS account, save time, money, and get back
               to work on what makes your product unique.
             </p>
-            <Link to="/severless-applications" className="link">
-              View the product
-            </Link>
+            <div className="anchor">
+              <Link to="/severless-applications" className="link">
+                View the product
+              </Link>
+            </div>
           </div>
           <div className="container-lg">
             <Image src={"maarten_deckers"} alt="Galery" />
           </div>
         </article>
 
-        <article>
+        <article className="article">
           <div className="wrapper">
-            <h2>
+            <h3>
               Serverless applications in seconds, in your own AWS account.
-            </h2>
+            </h3>
             <p>
               Deploy infinitely scalable serverless applications, APIs, and
               sites in seconds with a single command. Bring a Heroku-style user
               experience to your own AWS account, save time, money, and get back
               to work on what makes your product unique.
             </p>
-            <Link to="/severless-applications" className="link">
-              View the product
-            </Link>
+            <div className="anchor">
+              <Link to="/severless-applications" className="link">
+                View the product
+              </Link>
+            </div>
           </div>
           <div className="container-lg">
             <Image src={"kimon_maritz"} alt="Galery" />
