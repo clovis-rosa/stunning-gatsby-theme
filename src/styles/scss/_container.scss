@@ -1,0 +1,126 @@
+/* 
+Container configuration from Mozilla Website:
+https://foundation.mozilla.org/en/blog/how-create-stronger-safer-online-communities/
+*/
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  // padding-right: 15px;
+  // padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 358px) {
+  .container,
+  .container-sm {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .container-lg {
+    max-width: 90%;
+  }
+}
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+  .container-lg {
+    max-width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 720px;
+  }
+  .container-lg {
+    max-width: 90%;
+  }
+}
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 960px;
+  }
+  .container-lg {
+    max-width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    width: 80%;
+    max-width: 1125px;
+    // max-width: 1140px;
+  }
+}
+.row {
+  display: flex;
+  place-items: center;
+  flex-wrap: wrap;
+  // margin-right: -15px;
+  // margin-left: -15px;
+
+  &.space-between {
+    justify-content: space-between;
+  }
+  &.center {
+    justify-content: center;
+  }
+}
+
+.wrapper {
+  // margin-top: 0;
+  width: 75%;
+  // min-width: 100vh; ???
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+// .container {
+//   flex-grow: 1;
+//   margin: 0 auto;
+//   padding: 0 32px;
+//   position: relative;
+//   width: auto;
+//   height: 100%;
+
+//   &.fluid {
+//     width: 100%;
+//     max-width: 100%;
+//     padding: 0;
+//   }
+//   @media (min-width: 1024px) {
+//     max-width: 960px;
+//   }
+//   @media (min-width: 1216px) {
+//     max-width: 1152px;
+//   }
+//   @media (min-width: 1408px) {
+//     max-width: 1560px;
+//   }
+
+//   .row {
+//     display: flex;
+//     align-items: center;
+//     &.space-between {
+//       justify-content: space-between;
+//     }
+//     &.center {
+//       justify-content: center;
+//     }
+//   }
+// }
