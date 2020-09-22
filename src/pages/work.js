@@ -27,61 +27,148 @@ const Work = () => {
               <div className="feature__item">
                 <div className="box-shadow">
                   <div className="img-wrapper">
-                    <Image src={"g_email"} alt="Gmail" />
+                    <Image src={"rayanair"} alt="Ryanair Unsplash Image" />
                   </div>
                 </div>
-
-                <h6>Slack</h6>
+                <h6>Rayanair</h6>
                 <p className="small">
-                  Slack messages are a great way to inform the entire team of
-                  downtime and performance degradation.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Neque expedita, deleniti adipisci quasi ea in dolorum nisi
+                  molestias eum repellat ad nihil, minus optio error cumque!
                 </p>
               </div>
               {/*  */}
               <div className="feature__item">
                 <div className="box-shadow">
                   <div className="img-wrapper">
-                    <Image src={"g_email"} alt="Gmail" />
+                    <Image src={"google"} alt="Google Unsplash Image" />
                   </div>
                 </div>
-
-                <h6>Slack</h6>
+                <h6>Google</h6>
                 <p className="small">
-                  Slack messages are a great way to inform the entire team of
-                  downtime and performance degradation.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Neque expedita, deleniti adipisci quasi ea in dolorum nisi
+                  molestias eum repellat ad nihil, minus optio error cumque!
                 </p>
               </div>
               {/*  */}
               <div className="feature__item">
                 <div className="box-shadow">
                   <div className="img-wrapper">
-                    <Image src={"g_email"} alt="Gmail" />
+                    <Image src={"amazon"} alt="Amazon Unsplash Image" />
                   </div>
                 </div>
-
-                <h6>Slack</h6>
+                <h6>Amazon</h6>
                 <p className="small">
-                  Slack messages are a great way to inform the entire team of
-                  downtime and performance degradation.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Neque expedita, deleniti adipisci quasi ea in dolorum nisi
+                  molestias eum repellat ad nihil, minus optio error cumque!
                 </p>
               </div>
               {/*  */}
               <div className="feature__item">
                 <div className="box-shadow">
                   <div className="img-wrapper">
-                    <Image src={"g_email"} alt="Gmail" />
+                    <Image
+                      src={"nytimes"}
+                      alt="New Yourk Times Unsplash Image"
+                    />
                   </div>
                 </div>
-
-                <h6>Slack</h6>
+                <h6>New Yourk Times</h6>
                 <p className="small">
-                  Slack messages are a great way to inform the entire team of
-                  downtime and performance degradation.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Neque expedita, deleniti adipisci quasi ea in dolorum nisi
+                  molestias eum repellat ad nihil, minus optio error cumque!
                 </p>
               </div>
             </div>
 
-            <div className="anchor">
+            <h6 className="page-title">Work Highlights</h6>
+            <h3 style={{ marginLeft: "-3px" }}>
+              Diam volutpat commodo sed egestas egestas fringilla phasellus.
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ut
+              unde ad assumenda quae, nulla culpa omnis sit esse aliquam?
+            </p>
+
+            <div className="highlight">
+              {/*  */}
+              <div className="highlight__item">
+                <h6 className="highlight__title">Lorem, ipsum dolor.</h6>
+                <p className="highlight__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Beatae aspernatur veritatis distinctio!
+                </p>
+              </div>
+              {/*  */}
+              <div className="highlight__item">
+                <h6 className="highlight__title">Lorem, ipsum dolor.</h6>
+                <p className="highlight__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Beatae aspernatur veritatis distinctio!
+                </p>
+              </div>
+              {/*  */}
+              <div className="highlight__item">
+                <h6 className="highlight__title">Lorem, ipsum dolor.</h6>
+                <p className="highlight__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Beatae aspernatur veritatis distinctio!
+                </p>
+              </div>
+              {/*  */}
+              <div className="highlight__item">
+                <h6 className="highlight__title">Lorem, ipsum dolor.</h6>
+                <p className="highlight__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Beatae aspernatur veritatis distinctio!
+                </p>
+              </div>
+              {/*  */}
+              <div className="highlight__item">
+                <h6 className="highlight__title">Lorem, ipsum dolor.</h6>
+                <p className="highlight__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Beatae aspernatur veritatis distinctio!
+                </p>
+              </div>
+              {/*  */}
+              <div className="highlight__item">
+                <h6 className="highlight__title">Lorem, ipsum dolor.</h6>
+                <p className="highlight__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Beatae aspernatur veritatis distinctio!
+                </p>
+              </div>
+              {/*  */}
+              <div className="highlight__item">
+                <h6 className="highlight__title">Lorem, ipsum dolor.</h6>
+                <p className="highlight__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Beatae aspernatur veritatis distinctio!
+                </p>
+              </div>
+              {/*  */}
+              <div className="highlight__item">
+                <h6 className="highlight__title">Lorem, ipsum dolor.</h6>
+                <p className="highlight__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Beatae aspernatur veritatis distinctio!
+                </p>
+              </div>
+              {/*  */}
+              <div className="highlight__item">
+                <h6 className="highlight__title">Lorem, ipsum dolor.</h6>
+                <p className="highlight__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Beatae aspernatur veritatis distinctio!
+                </p>
+              </div>
+            </div>
+
+            <div className="anchor__back">
               <Link to="/" className="link">
                 Back to Home Page
               </Link>

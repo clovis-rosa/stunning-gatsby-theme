@@ -1,8 +1,12 @@
+.page-title:not(:first-child) {
+  margin-top: calc(60px + (80 - 60) * ((100vw - 320px) / (1600 - 320)));
+}
+
 .feature {
   display: grid;
   grid-template-columns: 1fr 1fr;
   //   gap: 3rem;
-  margin-top: 5rem;
+  margin-top: calc(60px + (80 - 60) * ((100vw - 320px) / (1600 - 320)));
 
   &__item {
     display: flex;
@@ -22,7 +26,8 @@
       div {
         display: flex;
         justify-content: center;
-        width: 60%;
+        width: 80%;
+        border-radius: 5px;
 
         image {
           // width: 50px;
@@ -59,5 +64,29 @@
   &__item:nth-child(4) {
     padding-top: 3rem;
     padding-left: 3rem;
+  }
+}
+
+.highlight {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: calc(60px + (80 - 60) * ((100vw - 320px) / (1600 - 320)));
+
+  &__item {
+    border: dotted 1px black;
+    padding: 0.5rem;
+    // padding-left: 0.5rem;
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+  }
+
+  &__text {
+    margin-top: 0;
+    font-size: 1.1rem;
   }
 }

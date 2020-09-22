@@ -12,13 +12,14 @@ const IndexPage = () => {
         <article className="article">
           <div className="wrapper">
             <h3 style={{ marginLeft: "-3px" }}>
-              Building beautiful solutions.
+              Maecenas sagittis nibh vitae tortor blandit tellus.
             </h3>
             <p>
-              Our goal is to provide simple, beautiful, and effective software
-              solutions your team will enjoy using. From performance and uptime
-              monitoring to large scale log management, we have a variety of
-              solutions to help make your products the best they can be.
+              Sed mi nisi, tincidunt id turpis non, dapibus condimentum neque.
+              Pellentesque pretium sollicitudin mauris, nec suscipit neque
+              sollicitudin in. Vivamus augue lorem, porttitor eu massa eget,
+              pretium volutpat mi. Donec id metus quis turpis tempor convallis
+              non eget risus. Ut eu feugiat lorem. Nullam eget cursus tellus.
             </p>
             <div className="anchor">
               <Link to="/severless-applications" className="link">
@@ -27,20 +28,25 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="container-lg">
-            <Image src={"tobias_keller"} alt="Galery" />
+            <Image src={"tobias_keller"} alt="Tobias Keller Unsplash Image" />
           </div>
         </article>
 
         <article className="article">
           <div className="wrapper">
             <h3>
-              Serverless applications in seconds, in your own AWS account.
+              Integer suscipit rhoncus orci, a pretium odio. Fusce nec tortor
+              eget.
             </h3>
             <p>
-              Deploy infinitely scalable serverless applications, APIs, and
-              sites in seconds with a single command. Bring a Heroku-style user
-              experience to your own AWS account, save time, money, and get back
-              to work on what makes your product unique.
+              Curabitur iaculis lectus blandit placerat euismod. Nam magna dui,
+              malesuada vitae arcu tempus, consequat ultrices nibh. Aliquam
+              convallis eros a accumsan fringilla. Mauris vel urna id nisi
+              dapibus vehicula. Fusce turpis nisi, consectetur in mollis ac,
+              sagittis sed odio. Ut consectetur ante metus, sit amet eleifend
+              neque iaculis vitae. Phasellus id est ac mi ornare mattis eu sit
+              amet augue. Vestibulum pharetra a ex in interdum. Nulla facilisi.
+              Curabitur vel arcu et felis tristique semper.
             </p>
             <div className="anchor">
               <Link to="/severless-applications" className="link">
@@ -49,20 +55,25 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="container-lg">
-            <Image src={"maarten_deckers"} alt="Galery" />
+            <Image
+              src={"maarten_deckers"}
+              alt="Maarten Deckers Unsplash Image"
+            />
           </div>
         </article>
-
+        {/*  */}
         <article className="article">
           <div className="wrapper">
             <h3>
-              Serverless applications in seconds, in your own AWS account.
+              Maecenas suscipit nunc eu nunc aliquam convallis eget ac enim.
             </h3>
             <p>
-              Deploy infinitely scalable serverless applications, APIs, and
-              sites in seconds with a single command. Bring a Heroku-style user
-              experience to your own AWS account, save time, money, and get back
-              to work on what makes your product unique.
+              Maecenas eget massa nibh. Nullam ullamcorper aliquet consequat.
+              Donec porttitor fermentum felis, at euismod turpis cursus eget.
+              Vestibulum iaculis interdum diam, et euismod leo aliquet nec. Orci
+              varius natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus. Nam pellentesque metus arcu, non tempus risus
+              fringilla at.
             </p>
             <div className="anchor">
               <Link to="/severless-applications" className="link">
@@ -71,7 +82,36 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="container-lg">
-            <Image src={"kimon_maritz"} alt="Galery" />
+            <Image
+              src={"christian_holzinger_01"}
+              alt="Christian Holzinger Unsplash Image"
+            />
+          </div>
+        </article>
+        {/*  */}
+        <article className="article">
+          <div className="wrapper">
+            <h3>
+              Quisque fringilla nulla et aliquam pretium. Fusce ultricies erat
+              augue.
+            </h3>
+            <p>
+              Integer bibendum augue eget turpis interdum, quis vehicula turpis
+              finibus. Nam in volutpat sapien. Cras quis arcu id erat sagittis
+              iaculis vitae vitae felis. Nullam euismod sem neque. Nulla
+              molestie lorem id sem rhoncus, vel ultricies lectus luctus. Proin
+              blandit eros in lectus ultricies, non laoreet dolor aliquet.
+              Aenean finibus, purus aliquet sagittis facilisis, erat velit
+              lobortis ex, nec cursus turpis metus tristique justo.
+            </p>
+            <div className="anchor">
+              <Link to="/severless-applications" className="link">
+                View the product
+              </Link>
+            </div>
+          </div>
+          <div className="container-lg">
+            <Image src={"kimon_maritz"} alt="Kimon Martiz Unsplash Image" />
           </div>
         </article>
       </section>

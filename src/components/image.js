@@ -37,7 +37,44 @@ export const Image = ({ src }) => {
           }
         }
       }
-      g_email: file(relativePath: { eq: "g_email.png" }) {
+      christian_holzinger_01: file(
+        relativePath: { eq: "christian_holzinger_01.jpg" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      clovis_rosa_01: file(relativePath: { eq: "clovis_rosa_01.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      rayanair: file(relativePath: { eq: "rayanair.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      google: file(relativePath: { eq: "google.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      amazon: file(relativePath: { eq: "amazon.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      nytimes: file(relativePath: { eq: "nytimes.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -55,8 +92,18 @@ export const Image = ({ src }) => {
         <Img fluid={data.maarten_deckers_01.childImageSharp.fluid} />
       ) : src === `kimon_maritz` ? (
         <Img fluid={data.kimon_maritz_01.childImageSharp.fluid} />
+      ) : src === `christian_holzinger_01` ? (
+        <Img fluid={data.christian_holzinger_01.childImageSharp.fluid} />
+      ) : src === `clovis_rosa_01` ? (
+        <Img fluid={data.clovis_rosa_01.childImageSharp.fluid} />
+      ) : src === `nytimes` ? (
+        <Img fluid={data.nytimes.childImageSharp.fluid} />
+      ) : src === `rayanair` ? (
+        <Img fluid={data.rayanair.childImageSharp.fluid} />
+      ) : src === `google` ? (
+        <Img fluid={data.google.childImageSharp.fluid} />
       ) : (
-        <Img fluid={data.g_email.childImageSharp.fluid} />
+        <Img fluid={data.amazon.childImageSharp.fluid} />
       )}
     </>
   )

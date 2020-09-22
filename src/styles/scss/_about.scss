@@ -1,0 +1,47 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin-top: calc(60px + (80 - 60) * ((100vw - 320px) / (1600 - 320)));
+  padding: 0 4rem 0 4rem;
+
+  &--left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h5 {
+      margin: 0;
+    }
+  }
+
+  &--right {
+    width: 100%;
+    margin: auto;
+  }
+
+  .contact {
+    // max-width: 500px;
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      a {
+        // font-size: 1.15rem;
+      }
+
+      &:not(:first-child) {
+        margin: 0.5rem 0 0 0;
+      }
+
+      svg {
+        // width: 2rem;
+      }
+    }
+  }
+}
