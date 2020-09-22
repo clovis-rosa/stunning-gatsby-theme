@@ -12,8 +12,8 @@ const Header = ({ siteTitle }) => (
         </div>
         <ul className="row space-between">
           <li>
-            <Link to="/projects" className="menu">
-              Projects
+            <Link to="/work" className="menu">
+              Work
             </Link>
           </li>
           <li>

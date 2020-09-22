@@ -11,15 +11,21 @@ const IndexPage = () => {
       <section className="section">
         <article className="article">
           <div className="wrapper">
-            <h2>Building beautiful solutions.</h2>
+            <h3 style={{ marginLeft: "-3px" }}>
+              Building beautiful solutions.
+            </h3>
             <p>
               Our goal is to provide simple, beautiful, and effective software
               solutions your team will enjoy using. From performance and uptime
               monitoring to large scale log management, we have a variety of
               solutions to help make your products the best they can be.
             </p>
+            <div className="anchor">
+              <Link to="/severless-applications" className="link">
+                View the product
+              </Link>
+            </div>
           </div>
-
           <div className="container-lg">
             <Image src={"tobias_keller"} alt="Galery" />
           </div>

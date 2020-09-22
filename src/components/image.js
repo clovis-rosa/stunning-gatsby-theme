@@ -37,6 +37,13 @@ export const Image = ({ src }) => {
           }
         }
       }
+      g_email: file(relativePath: { eq: "g_email.png" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `)
 
@@ -46,8 +53,10 @@ export const Image = ({ src }) => {
         <Img fluid={data.tobias_keller_01.childImageSharp.fluid} />
       ) : src === `maarten_deckers` ? (
         <Img fluid={data.maarten_deckers_01.childImageSharp.fluid} />
-      ) : (
+      ) : src === `kimon_maritz` ? (
         <Img fluid={data.kimon_maritz_01.childImageSharp.fluid} />
+      ) : (
+        <Img fluid={data.g_email.childImageSharp.fluid} />
       )}
     </>
   )
