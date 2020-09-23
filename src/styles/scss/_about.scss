@@ -1,7 +1,6 @@
 .about__grid {
   display: grid;
   grid-template-columns: 60% 40%;
-  //   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   margin-top: calc(60px + (80 - 60) * ((100vw - 320px) / (1600 - 320)));
   padding: 0 4rem 0 4rem;
@@ -15,8 +14,6 @@
     p,
     i,
     ul {
-      //   margin-top: 2rem;
-      //   margin-bottom: 0;
       margin: 0;
     }
   }
@@ -51,4 +48,100 @@
       }
     }
   }
+
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    grid-template-columns: 1fr;
+    padding: 0;
+    // gap: 2rem;
+    &--left {
+      h5,
+      h6,
+      p,
+      i,
+      ul {
+        margin-top: 1rem;
+        margin-bottom: 0;
+      }
+    }
+    &--right {
+      max-height: 80%;
+      overflow: hidden;
+      margin: 0;
+    }
+  }
+
+  /* iPads ----------- */
+  @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 0;
+    &--left {
+      h5,
+      h6,
+      p,
+      i,
+      ul {
+        margin-top: 1rem;
+        margin-bottom: 0;
+      }
+    }
+    &--right {
+      max-height: 80%;
+      overflow: hidden;
+      margin: 0;
+    }
+  }
+
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 769px) and (max-device-width: 932px) {
+    grid-template-columns: 1fr;
+    padding: 0;
+    &--left {
+      h5,
+      h6,
+      p,
+      i,
+      ul {
+        margin-top: 1rem;
+        margin-bottom: 0;
+      }
+    }
+    &--right {
+      max-height: 80%;
+      overflow: hidden;
+      margin: 0;
+    }
+  }
+
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 932px) and (max-device-width: 1024px) {
+    grid-template-columns: 48% 48%;
+    gap: 1rem;
+    padding: 0;
+    &--left {
+      h5,
+      h6,
+      p,
+      i,
+      ul {
+        margin-top: 1rem;
+        margin-bottom: 0;
+      }
+    }
+    &--right {
+      // overflow: hidden;
+      margin: auto;
+    }
+  }
+
+  // /* Desktops and laptops ----------- */
+  // @media only screen and (min-width: 1224px) {
+  //   /* Styles */
+  // }
+
+  /* 
+  Media queries for common device breakpoints
+
+  https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints/ 
+  */
 }

@@ -30,7 +30,7 @@ const Product = () => {
         {/*  */}
         <article className="product">
           <motion.div variants={transitionUp} className="wrapper">
-            <motion.h3 variants={item} style={{ marginLeft: "-3px" }}>
+            <motion.h3 variants={item}>
               Maecenas sagittis nibh vitae tortor blandit tellus.
             </motion.h3>
           </motion.div>
