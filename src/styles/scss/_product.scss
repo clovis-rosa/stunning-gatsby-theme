@@ -1,0 +1,12 @@
+.product {
+  .container-xl {
+    width: 100%;
+    max-height: 80%;
+  }
+}
+
+.product-post {
+  &__title {
+    margin-top: clamp(1.625rem, calc(1rem + 4vw), 3rem);
+  }
+}

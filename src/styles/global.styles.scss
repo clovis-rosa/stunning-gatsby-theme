@@ -20,6 +20,7 @@
   --color-tertiary: #feeb2d;
   --color-quaternary: #90b8d0;
   --color-link: #0d10bf;
+  --color-mark: #fcf1e8;
   // --color-link: #cdecf9;
 }
 
@@ -40,6 +41,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 ul[class],
 ol[class],
@@ -79,6 +82,19 @@ a {
   background-color: transparent;
   // color: currentColor;
   color: var(--color-link);
+
+  &.external-link {
+    color: var(--color-link);
+    font-style: italic;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+
+    &::after {
+      content: " "
+        url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20class='i-external'%20viewBox='0%200%2032%2032'%20width='12'%20height='14'%20fill='none'%20stroke='%230d10bf'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='9.38%'%3E%3Cpath%20d='M14%209%20L3%209%203%2029%2023%2029%2023%2018%20M18%204%20L28%204%2028%2014%20M28%204%20L14%2018'/%3E%3C/svg%3E");
+    }
+  }
 
   &:hover {
     color: var(--color-link);
@@ -124,8 +140,16 @@ select {
 }
 
 blockquote {
-  padding-left: 1em;
-  border-left: 4px solid hsl(180, 1%, 83%);
+  padding-left: 1.2rem;
+  border-left: 5px solid var(--color-dark);
+  font-size: 2rem;
+  font-style: italic;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+mark {
+  background: var(--color-mark);
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
@@ -142,12 +166,12 @@ blockquote {
 }
 
 /* ==== ALL IMPORTS HERE ==== */
-
 @import "./scss/typography";
 @import "./scss/container";
 @import "./scss/buttons";
 @import "./scss/header";
 @import "./scss/home";
 @import "./scss/work";
+@import "./scss/product";
 @import "./scss/about";
 @import "./scss/footer";

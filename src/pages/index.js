@@ -3,33 +3,55 @@ import Layout from "../components/layout"
 import { Image } from "../components/image"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
+import { motion } from "framer-motion"
+
+const transition = { duration: 6, ease: [0.43, 0.13, 0.23, 0.9] }
 
 const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <section className="section">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="section"
+      >
+        {/*  */}
         <article className="article">
           <div className="wrapper">
-            <h3 style={{ marginLeft: "-3px" }}>
+            <motion.h3 exit={{ opacity: 0 }} transition={{ transition }}>
               Maecenas sagittis nibh vitae tortor blandit tellus.
-            </h3>
-            <p>
+            </motion.h3>
+            <motion.p exit={{ opacity: 0 }} transition={{ transition }}>
               Sed mi nisi, tincidunt id turpis non, dapibus condimentum neque.
               Pellentesque pretium sollicitudin mauris, nec suscipit neque
               sollicitudin in. Vivamus augue lorem, porttitor eu massa eget,
               pretium volutpat mi. Donec id metus quis turpis tempor convallis
               non eget risus. Ut eu feugiat lorem. Nullam eget cursus tellus.
-            </p>
-            <div className="anchor">
-              <Link to="/severless-applications" className="link">
+            </motion.p>
+            <motion.div
+              exit={{ opacity: 0 }}
+              transition={{ transition }}
+              className="anchor"
+            >
+              <Link to="/product" className="link">
                 View the product
               </Link>
-            </div>
+            </motion.div>
           </div>
-          <div className="container-lg">
-            <Image src={"tobias_keller"} alt="Tobias Keller Unsplash Image" />
-          </div>
+          <Link to="/product">
+            <motion.div
+              exit={{ opacity: 0 }}
+              transition={{ transition }}
+              className="container-lg"
+            >
+              <Image
+                whileHover={{ scale: 1.1 }}
+                src={"tobias_keller"}
+                alt="Tobias Keller Unsplash Image"
+              />
+            </motion.div>
+          </Link>
         </article>
 
         <article className="article">
@@ -49,7 +71,7 @@ const IndexPage = () => {
               Curabitur vel arcu et felis tristique semper.
             </p>
             <div className="anchor">
-              <Link to="/severless-applications" className="link">
+              <Link to="/product" className="link">
                 View the product
               </Link>
             </div>
@@ -76,7 +98,7 @@ const IndexPage = () => {
               fringilla at.
             </p>
             <div className="anchor">
-              <Link to="/severless-applications" className="link">
+              <Link to="/product" className="link">
                 View the product
               </Link>
             </div>
@@ -105,7 +127,7 @@ const IndexPage = () => {
               lobortis ex, nec cursus turpis metus tristique justo.
             </p>
             <div className="anchor">
-              <Link to="/severless-applications" className="link">
+              <Link to="/product" className="link">
                 View the product
               </Link>
             </div>
@@ -114,7 +136,7 @@ const IndexPage = () => {
             <Image src={"kimon_maritz"} alt="Kimon Martiz Unsplash Image" />
           </div>
         </article>
-      </section>
+      </motion.section>
     </Layout>
   )
 }

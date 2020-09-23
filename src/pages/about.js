@@ -20,10 +20,10 @@ const About = () => (
         <div className="about__grid">
           {/*  */}
           <div className="about__grid--left">
-            <h4>
+            <h5>
               My name is <i>Clovis Rosa</i> and I am a new Front-End Developer
               on the block!
-            </h4>
+            </h5>
             <h6>
               <i>
                 Looking for my next opportunity to make a change. The digital
@@ -50,7 +50,7 @@ const About = () => (
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 512 512"
                     height="1em"
                     width="1em"
@@ -64,7 +64,7 @@ const About = () => (
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 1024 1024"
                     height="1em"
                     width="1em"
@@ -80,7 +80,7 @@ const About = () => (
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 1024 1024"
                     height="1em"
                     width="1em"
@@ -96,7 +96,7 @@ const About = () => (
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     role="img"
                     viewBox="0 0 24 24"
                     height="1em"

@@ -30,7 +30,7 @@ const Work = () => {
                     <Image src={"rayanair"} alt="Ryanair Unsplash Image" />
                   </div>
                 </div>
-                <h6>Rayanair</h6>
+                <h6 className="feature__title">Rayanair</h6>
                 <p className="small">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Neque expedita, deleniti adipisci quasi ea in dolorum nisi
@@ -44,7 +44,7 @@ const Work = () => {
                     <Image src={"google"} alt="Google Unsplash Image" />
                   </div>
                 </div>
-                <h6>Google</h6>
+                <h6 className="feature__title">Google</h6>
                 <p className="small">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Neque expedita, deleniti adipisci quasi ea in dolorum nisi
@@ -58,7 +58,7 @@ const Work = () => {
                     <Image src={"amazon"} alt="Amazon Unsplash Image" />
                   </div>
                 </div>
-                <h6>Amazon</h6>
+                <h6 className="feature__title">Amazon</h6>
                 <p className="small">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Neque expedita, deleniti adipisci quasi ea in dolorum nisi
@@ -75,7 +75,7 @@ const Work = () => {
                     />
                   </div>
                 </div>
-                <h6>New Yourk Times</h6>
+                <h6 className="feature__title">New Yourk Times</h6>
                 <p className="small">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Neque expedita, deleniti adipisci quasi ea in dolorum nisi
