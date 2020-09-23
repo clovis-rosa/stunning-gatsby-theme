@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 import { Image } from "../components/image"
 import SEO from "../components/seo"
 
 const About = () => (
-  <Layout>
+  <>
     <SEO title="About us" />
     <div className="container">
       <h2>
@@ -120,7 +120,7 @@ const About = () => (
         </div>
       </article>
     </div>
-  </Layout>
+  </>
 )
 
 export default About

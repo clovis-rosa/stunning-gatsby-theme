@@ -12,7 +12,7 @@ import Header from "./header"
 import Footer from "./footer"
 import { motion, AnimatePresence } from "framer-motion"
 
-const duration = 0.5
+const duration = 0.3
 
 const variants = {
   initial: {
@@ -32,7 +32,7 @@ const variants = {
   },
 }
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -46,16 +46,23 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <AnimatePresence initial={false} exitBeforeEnter>
-        <motion.main
-          variants={variants}
-          initial="false"
-          animate="enter"
-          exit="exit"
-        >
-          {children}
-        </motion.main>
-      </AnimatePresence>
+      {/*  */}
+      <div>
+        {/*  */}
+        <AnimatePresence>
+          <motion.main
+            key={location.pathname}
+            variants={variants}
+            initial="initial"
+            animate="enter"
+            exit="exit"
+          >
+            {children}
+          </motion.main>
+        </AnimatePresence>
+        {/*  */}
+      </div>
+      {/*  */}
       <Footer />
     </>
   )

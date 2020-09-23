@@ -1,11 +1,12 @@
 import React from "react"
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 import { Image } from "../components/image"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
 import { motion } from "framer-motion"
 
-const box = {
+const transitionImg = { duration: 1, ease: [0.6, 0.01, -0.05, 0.9] }
+const transitionUp = {
   enter: {
     transition: {
       when: "beforeChildren",
@@ -23,24 +24,32 @@ const item = {
 
 const Product = () => {
   return (
-    <Layout>
+    <>
       <SEO title="Product" />
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="section"
-      >
+      <section className="section">
         {/*  */}
         <article className="product">
-          <div className="wrapper">
-            <h3 style={{ marginLeft: "-3px" }}>
+          <motion.div variants={transitionUp} className="wrapper">
+            <motion.h3 variants={item} style={{ marginLeft: "-3px" }}>
               Maecenas sagittis nibh vitae tortor blandit tellus.
-            </h3>
-          </div>
+            </motion.h3>
+          </motion.div>
           {/*  */}
-          <div id="container-wide" className="container-wide">
+          <motion.div
+            className="container-wide"
+            initial={{ y: "30%", width: "80%", maxWidth: "1125px" }}
+            animate={{
+              y: 0,
+              width: "100%",
+              maxWidth: "100%",
+              // height: window.innerWidth > 1440 ? 500 : 700,
+              overflow: "hidden",
+              transition: { delay: 0.2, ...transitionImg },
+            }}
+            id="container-wide"
+          >
             <Image src={"tobias_keller"} alt="Tobias Keller Unsplash Image" />
-          </div>
+          </motion.div>
           {/*  */}
           <div className="product-post wrapper">
             <h5 className="product-post__title">
@@ -109,8 +118,8 @@ const Product = () => {
           </div>
         </article>
         {/*  */}
-      </motion.section>
-    </Layout>
+      </section>
+    </>
   )
 }
 

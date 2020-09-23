@@ -1,12 +1,12 @@
 import React from "react"
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 import { Image } from "../components/image"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
 
 const Work = () => {
   return (
-    <Layout>
+    <>
       <SEO title="Work" />
       <section className="section">
         <article className="article">
@@ -176,7 +176,7 @@ const Work = () => {
           </div>
         </article>
       </section>
-    </Layout>
+    </>
   )
 }
 

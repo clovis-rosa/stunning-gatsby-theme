@@ -1,56 +1,38 @@
 import React from "react"
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 import { Image } from "../components/image"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
 
-const transition = { duration: 6, ease: [0.43, 0.13, 0.23, 0.9] }
+// const transition = { duration: 6, ease: [0.43, 0.13, 0.23, 0.9] }
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <>
       <SEO title="Home" />
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="section"
-      >
+      <section className="section">
         {/*  */}
         <article className="article">
           <div className="wrapper">
-            <motion.h3 exit={{ opacity: 0 }} transition={{ transition }}>
-              Maecenas sagittis nibh vitae tortor blandit tellus.
-            </motion.h3>
-            <motion.p exit={{ opacity: 0 }} transition={{ transition }}>
+            <h3>Maecenas sagittis nibh vitae tortor blandit tellus.</h3>
+            <p>
               Sed mi nisi, tincidunt id turpis non, dapibus condimentum neque.
               Pellentesque pretium sollicitudin mauris, nec suscipit neque
               sollicitudin in. Vivamus augue lorem, porttitor eu massa eget,
               pretium volutpat mi. Donec id metus quis turpis tempor convallis
               non eget risus. Ut eu feugiat lorem. Nullam eget cursus tellus.
-            </motion.p>
-            <motion.div
-              exit={{ opacity: 0 }}
-              transition={{ transition }}
-              className="anchor"
-            >
+            </p>
+            <div className="anchor">
               <Link to="/product" className="link">
                 View the product
               </Link>
-            </motion.div>
+            </div>
           </div>
           <Link to="/product">
-            <motion.div
-              exit={{ opacity: 0 }}
-              transition={{ transition }}
-              className="container-lg"
-            >
-              <Image
-                whileHover={{ scale: 1.1 }}
-                src={"tobias_keller"}
-                alt="Tobias Keller Unsplash Image"
-              />
-            </motion.div>
+            <div className="container-lg">
+              <Image src={"tobias_keller"} alt="Tobias Keller Unsplash Image" />
+            </div>
           </Link>
         </article>
 
@@ -136,8 +118,8 @@ const IndexPage = () => {
             <Image src={"kimon_maritz"} alt="Kimon Martiz Unsplash Image" />
           </div>
         </article>
-      </motion.section>
-    </Layout>
+      </section>
+    </>
   )
 }
 
