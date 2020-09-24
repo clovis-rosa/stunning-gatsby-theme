@@ -14,11 +14,69 @@ footer {
     }
 
     &:last-child::after {
-      display: none;
+      content: "";
     }
 
     &:hover {
       color: black;
     }
   }
+
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    div.wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      a {
+        display: block;
+        min-height: 20px;
+        &::after {
+          content: "";
+          margin: 0;
+        }
+      }
+      margin-bottom: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
+    }
+  }
+  /* iPads ----------- */
+  @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    div.wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      a {
+        display: block;
+        min-height: 20px;
+        &::after {
+          content: "";
+          margin: 0;
+        }
+      }
+      margin-bottom: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
+    }
+  }
+
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 769px) and (max-device-width: 932px) {
+  }
+
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 932px) and (max-device-width: 1024px) {
+  }
+
+  // /* Desktops and laptops ----------- */
+  // @media only screen and (min-width: 1224px) {
+  //   /* Styles */
+  // }
+
+  /* 
+  Media queries for common device breakpoints
+
+  https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints/ 
+  */
 }

@@ -9,6 +9,8 @@ const Footer = () => {
         <a href="https://twitter.com/rosaclovis">Twitter</a>
         <a href="https://github.com/clovis-rosa">Github</a>
         <Link to="/about">Privacy</Link>
+      </div>
+      <div>
         <a href="https://www.gatsbyjs.org">
           © {new Date().getFullYear()}, by Clovis Rosa. Created with Gatsby
         </a>

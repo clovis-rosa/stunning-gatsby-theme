@@ -2,7 +2,7 @@
 
 > Stunning good looking minimal website just using system font and great looking images.
 
-Website deployed at Vercel.com - [** Stunning Theme - https://stunning-gatsby-theme.now.sh/**](https://stunning-gatsby-theme.now.sh/)
+Website deployed at Vercel.com - [** Stunning Theme - https://stunning-gatsby-theme.vercel.app/**](https://stunning-gatsby-theme.vercel.app/)
 
 ---
 
