@@ -1,9 +1,27 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "stunning-gatsby-theme",
+  "description": "Stunning good looking minimal website just using system font and great looking images.",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Clovis Rosa <clovis.souzarosa@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clovis-rosa/stunning-gatsby-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/clovis-rosa/stunning-gatsby-theme/issues"
+  },
+  "license": "0BSD",
+  "main": "index.js",
+  "keywords": [ 
+    "gatsby",
+    "framer-motion",
+    "portfolio",
+    "react",
+    "gsap",
+    "scss",
+    "javascript"
+  ],
   "dependencies": {
     "framer-motion": "^2.6.16-alpha.4",
     "gatsby": "^2.24.64",
@@ -26,11 +44,7 @@
   "devDependencies": {
     "@hot-loader/react-dom": "^17.0.0-rc.2",
     "prettier": "2.1.1"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
+  },  
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -39,12 +53,5 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
