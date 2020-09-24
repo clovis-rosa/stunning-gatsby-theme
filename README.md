@@ -1,4 +1,4 @@
-# [Gatsby/Framer-Motion/SCSS] Minima - Responsve Gatsby Theme Website
+# [Gatsby/Framer-Motion/SCSS] Stunning Theme - Responsve Gatsby Website
 
 > Stunning good looking minimal website just using system font and great looking images.
 
@@ -74,12 +74,13 @@ Here are some places to start:
 ---
 
 Screenshots:
-![example image](screenshot_desktop.png "Raddy Blog Desktop")
-![example image](screenshot_ipad.png "Raddy Blog iPad")
-![example image](screenshot_iphonex.png "Raddy Blog iPhoneX")
+![Stunning Theme Home page](stunning-gatsby-theme.webp "Stunning Theme Home page")
+![Stunning Theme Product page](stunning-gatsby-theme02.webp "Stunning Theme Product page")
+![Stunning Theme Work page](stunning-gatsby-theme03.webp "Stunning Theme Work page")
+![Stunning Theme About page](stunning-gatsby-theme04.webp "Stunning Theme About page")
 
 ---
 
 ## 📖 License
 
-- This project is licensed under [the terms of the MIT license](LICENSE).
+- This project is licensed under [the terms of the 0BSD license](LICENSE).
