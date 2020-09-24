@@ -84,3 +84,9 @@ Screenshots:
 ## 📖 License
 
 - This project is licensed under [the terms of the 0BSD license](LICENSE).
+
+### resources:
+
+- https://image-processing.gatsbyjs.org/
+- https://apex.sh/
+- https://foundation.mozilla.org/en/blog/how-create-stronger-safer-online-communities/
