@@ -2,6 +2,10 @@ footer {
   text-align: center;
   padding: 10rem 0 5rem;
 
+  div.wrapper {
+    margin-bottom: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
+  }
+
   a {
     color: #adb5bd;
     font-size: 1rem;
@@ -38,7 +42,6 @@ footer {
           margin: 0;
         }
       }
-      margin-bottom: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
     }
   }
   /* iPads ----------- */
@@ -49,6 +52,7 @@ footer {
       justify-content: center;
       align-items: center;
       gap: 1rem;
+
       a {
         display: block;
         min-height: 20px;
@@ -57,7 +61,6 @@ footer {
           margin: 0;
         }
       }
-      margin-bottom: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
     }
   }
 
