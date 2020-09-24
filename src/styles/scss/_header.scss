@@ -8,7 +8,14 @@ header {
   margin-bottom: calc(80px + (160 - 80) * ((100vw - 320px) / (1600 - 320)));
 
   .container {
-    nav.row {
+    nav {
+      display: grid;
+      grid-template-columns: 85% 15%;
+      // display: flex;
+      // flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
       .logo {
         a {
           font-size: 0.875rem;
@@ -21,7 +28,11 @@ header {
       }
 
       ul {
-        gap: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
 
         li {
           .menu {
@@ -37,6 +48,18 @@ header {
             }
           }
         }
+      }
+
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        grid-template-columns: 60% 40%;
+      }
+
+      @media only screen and (min-device-width: 481px) and (max-device-width: 760px) {
+        grid-template-columns: 70% 30%;
+      }
+
+      @media only screen and (min-device-width: 761px) and (max-device-width: 932px) {
+        grid-template-columns: 70% 30%;
       }
     }
   }

@@ -44,7 +44,9 @@ h4,
 h5,
 h6,
 p,
+ul,
 ul[class],
+ol,
 ol[class],
 figure,
 blockquote,
@@ -168,8 +170,8 @@ mark {
 /* ==== ALL IMPORTS HERE ==== */
 @import "./scss/typography";
 @import "./scss/container";
-@import "./scss/buttons";
 @import "./scss/header";
+@import "./scss/buttons";
 @import "./scss/home";
 @import "./scss/work";
 @import "./scss/product";

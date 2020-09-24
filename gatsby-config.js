@@ -14,7 +14,7 @@ module.exports = {
         // Print removed selectors and processed file names
         develop: true,
         // Enable while using `gatsby develop`
-        purgeOnly: ['import "./src/styles/global.styles.scss"'],
+        // purgeOnly: ['import "./src/styles/global.styles.scss"'],
         // Purge only these files/folders
       },
     },

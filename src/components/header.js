@@ -6,11 +6,11 @@ const Header = ({ siteTitle }) => (
   <header>
     <div className="container">
       {/* NAV */}
-      <nav className="row space-between">
+      <nav className="">
         <div className="logo">
           <Link to="/">{siteTitle}</Link>
         </div>
-        <ul className="row space-between">
+        <ul className="">
           <li>
             <Link to="/work" className="menu">
               Work
